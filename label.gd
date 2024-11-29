@@ -1,11 +1,9 @@
 extends Label
 
-#var keywords = ["banana"]
+var keyword = "BANANA"
 	
 func _unhandled_input(event):
 	if event is InputEventKey:
-		if text.length() > 10:
-			text = ""
 		if event.pressed && OS.get_keycode_string(event.physical_keycode).length() == 1:
 			text += OS.get_keycode_string(event.physical_keycode)
 

@@ -10,9 +10,9 @@ script = ExtResource("1_66vdp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="KeyboardInputLabel" type="Label" parent="."]
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_right = 40.0
-offset_bottom = 23.0
+offset_bottom = 40.0
 script = ExtResource("2_n2ww2")
 
 [node name="Banana" type="Sprite2D" parent="."]
