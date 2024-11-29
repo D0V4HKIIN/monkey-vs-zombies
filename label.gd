@@ -1,26 +1,17 @@
 extends Label
 
-var keywords = ["banana"]
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+#var keywords = ["banana"]
 	
 func _unhandled_input(event):
 	if event is InputEventKey:
 		if text.length() > 10:
 			text = ""
-		if event.pressed:
+		if event.pressed && OS.get_keycode_string(event.physical_keycode).length() == 1:
 			text += OS.get_keycode_string(event.physical_keycode)
-		if keywords.find(text):
-			show_banana()
-			
-			
 
-	
-	
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("enter"):
+		if text == "BANANA":
+			%AmountBananas.add_banana(1)
+		text = ""
+		
