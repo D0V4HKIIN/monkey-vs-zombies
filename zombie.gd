@@ -1,9 +1,8 @@
 extends Node2D
 
-
 @export var SPEED = 30
 var word = "BRAIN"
-var current = 1
+var current = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$SignText.text = "[center]" + word + "[/center]"
@@ -16,6 +15,7 @@ func _unhandled_input(event):
 	if event is InputEventKey:
 		if event.pressed && OS.get_keycode_string(event.physical_keycode) == word[current]:
 			current += 1
+			print(current)
 			if current == word.length():
 				queue_free()
 			$SignText.text = "[center][b]"
@@ -24,6 +24,4 @@ func _unhandled_input(event):
 			$SignText.text += "[/b]"
 			for i in range(current, word.length()):
 				$SignText.text += word[i]
-			
 			$SignText.text += "[/center]"
-			# text += OS.get_keycode_string(event.physical_keycode)
