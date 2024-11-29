@@ -17,3 +17,4 @@ func spawn_zombie():
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("zombie"):
 		spawn_zombie()
+# aaa
