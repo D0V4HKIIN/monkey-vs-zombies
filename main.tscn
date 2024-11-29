@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://chxrc4q7mqqwj"]
+[gd_scene load_steps=3 format=3 uid="uid://cwevlqf13r453"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_66vdp"]
+[ext_resource type="Script" path="res://label.gd" id="2_n2ww2"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_66vdp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="KeyboardInputLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("2_n2ww2")

@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://xgivexbdpi7b"]
+[gd_scene load_steps=3 format=3 uid="uid://dn5rgd580lkxv"]
 
-[ext_resource type="Script" path="res://zombie.gd" id="1_4li2l"]
 [ext_resource type="Texture2D" uid="uid://dihgxefren6xs" path="res://icon.svg" id="1_ik2mp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ktvp"]
@@ -8,16 +7,9 @@ radius = 65.0
 height = 160.0
 
 [node name="Zombie" type="Area2D"]
-script = ExtResource("1_4li2l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_0ktvp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ik2mp")
-
-[node name="SignText" type="RichTextLabel" parent="."]
-offset_left = -57.0
-offset_top = -93.0
-offset_right = 57.0
-offset_bottom = -63.0
