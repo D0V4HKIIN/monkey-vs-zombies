@@ -1,4 +1,4 @@
-extends Label
+extends RichTextLabel
 
 var keyword = "BANANA"
 	
@@ -9,7 +9,6 @@ func _unhandled_input(event):
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("enter"):
-		if text == "BANANA":
+		if text == keyword:
 			%AmountBananas.add_banana(1)
 		text = ""
-		

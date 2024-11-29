@@ -1,15 +1,21 @@
 [gd_scene load_steps=3 format=3 uid="uid://dn5rgd580lkxv"]
 
-[ext_resource type="Texture2D" uid="uid://dihgxefren6xs" path="res://icon.svg" id="1_ik2mp"]
+[ext_resource type="Texture2D" uid="uid://cidkjmk8qotvk" path="res://skeleton.png" id="1_euv0w"]
+[ext_resource type="Script" path="res://zombie.gd" id="1_mfn0r"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ktvp"]
-radius = 65.0
-height = 160.0
-
-[node name="Zombie" type="Area2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_0ktvp")
+[node name="zombie" type="Node2D"]
+script = ExtResource("1_mfn0r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_ik2mp")
+position = Vector2(4, 3)
+scale = Vector2(0.193815, 0.194236)
+texture = ExtResource("1_euv0w")
+
+[node name="SignText" type="RichTextLabel" parent="."]
+offset_left = -93.0
+offset_top = -61.0
+offset_right = 133.0
+offset_bottom = -1.0
+rotation = -0.0872665
+bbcode_enabled = true
+text = "[center]brain[/center]"
