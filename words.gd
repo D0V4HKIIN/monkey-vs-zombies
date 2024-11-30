@@ -1,21 +1,23 @@
 extends Node
 
+
 var halloween_words = [
-	"Bat", "Ghost", "Witch", "Pumpkin", "Vampire", "Werewolf", "Monster", "Zombie", "Spider", "Cauldron",
-	"Black", "Cat", "Haunted", "Mummy", "Skull", "Bones", "Tombstone", "Frankenstein", "Creepy", "Goblin", "Eerie",
-	"Nightmare", "Full Moon", "Ghoulish", "Gruesome", "Boo", "Candy", "Trick", "Treat", "Potion", "Spell",
-	"Cobweb", "Jack-o’-lantern", "Shadow", "Lantern", "Scary", "Costume", "Mask", "Blood", "Graveyard", "Coffin",
-	"Broomstick", "Cloak", "Hocus", "Pocus", "Wraith", "Phantasm", "Creeper", "Horror", "Chilling", "Screech", "Fangs",
-	"Curse", "Midnight", "Spooky", "Specter", "Cackle", "Gory", "Bewitched", "Screaming", "Spectral", "Hallow",
-	"Phantom", "Ashes", "Bewitching", "Lurking", "Moaning", "Possessed", "Spellbook", "Scarecrow", "Howling", "Scream",
-	"Torchlight", "Enchanted", "Restless", "Catacomb", "Claw", "Crypt", "Poltergeist", "Rattling", "Tomb", "Wand",
-	"Shiver", "Grinning", "Cloaked", "Grave", "Fiend", "Gargoyle", "Bewitch", "Dark", "Fog", "Poison", "Omen",
-	"Sinister", "Ectoplasm", "Shrieking", "Nocturnal", "Fright", "Wicked"
+	"BAT", "GHOST", "WITCH", "PUMPKIN", "VAMPIRE", "WEREWOLF", "MONSTER", "ZOMBIE", "SPIDER", "CAULDRON",
+	"BLACK", "CAT", "HAUNTED", "MUMMY", "SKULL", "BONES", "TOMBSTONE", "FRANKENSTEIN", "CREEPY", "GOBLIN", "EERIE",
+	"NIGHTMARE", "FULL", "MOON", "GHOULISH", "GRUESOME", "BOO", "CANDY", "TRICK", "TREAT", "POTION", "SPELL",
+	"COBWEB", "JACK-O’-LANTERN", "SHADOW", "LANTERN", "SCARY", "COSTUME", "MASK", "BLOOD", "GRAVEYARD", "COFFIN",
+	"BROOMSTICK", "CLOAK", "HOCUS", "POCUS", "WRAITH", "PHANTASM", "CREEPER", "HORROR", "CHILLING", "SCREECH", "FANGS",
+	"CURSE", "MIDNIGHT", "SPOOKY", "SPECTER", "CACKLE", "GORY", "BEWITCHED", "SCREAMING", "SPECTRAL", "HALLOW",
+	"PHANTOM", "ASHES", "BEWITCHING", "LURKING", "MOANING", "POSSESSED", "SPELLBOOK", "SCARECROW", "HOWLING", "SCREAM",
+	"TORCHLIGHT", "ENCHANTED", "RESTLESS", "CATACOMB", "CLAW", "CRYPT", "POLTERGEIST", "RATTLING", "TOMB", "WAND",
+	"SHIVER", "GRINNING", "CLOAKED", "GRAVE", "FIEND", "GARGOYLE", "BEWITCH", "DARK", "FOG", "POISON", "OMEN",
+	"SINISTER", "ECTOPLASM", "SHRIEKING", "NOCTURNAL", "FRIGHT", "WICKED"
 ]
+
 
 var rng = RandomNumberGenerator.new()
 
 func random_word() -> String:
-	var ran_num = rng.randi_range(0, 100)
+	var ran_num = rng.randi_range(0, halloween_words.length())
 	return halloween_words[ran_num]
 	
