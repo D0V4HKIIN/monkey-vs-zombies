@@ -8,9 +8,8 @@ func _ready() -> void:
 var zombie_scene = preload("res://zombie.tscn")
 
 func spawn_zombie():
-	print("zombie")
 	var zombie = zombie_scene.instantiate()
-	zombie.position = Vector2(575, randi_range(-2, 2) * 150)
+	zombie.position = Vector2(575, randi_range(-1, 2) * 200 - 100)
 	add_child(zombie)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
