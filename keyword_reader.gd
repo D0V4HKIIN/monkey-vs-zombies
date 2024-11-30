@@ -8,6 +8,7 @@ var current = 0
 func _ready() -> void:
 	keyword = text
 	text = "[center]" + text + "[/center]"
+	print(keyword)
 
 func show_text():
 	text = "[center][b]"
@@ -25,7 +26,6 @@ func _unhandled_input(event):
 			if current == keyword.length():
 				do_keyword()
 			show_text()
-
 		elif event.pressed && OS.get_keycode_string(event.physical_keycode).length() == 1:
 			current = 0
 			show_text()
