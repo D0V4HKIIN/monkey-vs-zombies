@@ -19,6 +19,8 @@ func random_word() -> String:
 
 func _ready():
 	text = random_word()
+	%ColorRect.size[0] = 10
+	%ColorRect.size[0] *= text.length()
 	super()
 
 func do_keyword():

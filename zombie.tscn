@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dn5rgd580lkxv"]
+[gd_scene load_steps=5 format=3 uid="uid://dn5rgd580lkxv"]
 
 [ext_resource type="Texture2D" uid="uid://cidkjmk8qotvk" path="res://skeleton.png" id="1_euv0w"]
 [ext_resource type="Script" path="res://zombie.gd" id="1_mfn0r"]
 [ext_resource type="Script" path="res://sign_text.gd" id="3_yw361"]
+[ext_resource type="Texture2D" uid="uid://b6wed3pfqc4r0" path="res://sign.png" id="4_r7qyq"]
 
 [node name="zombie" type="Node2D"]
 script = ExtResource("1_mfn0r")
@@ -12,12 +13,27 @@ position = Vector2(4, 3)
 scale = Vector2(0.193815, 0.194236)
 texture = ExtResource("1_euv0w")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+unique_name_in_owner = true
+offset_left = -2.0
+offset_top = -67.0
+offset_right = 50.0
+offset_bottom = -44.0
+rotation = -0.0872665
+color = Color(0.564706, 0.564706, 0.564706, 1)
+
 [node name="SignText" type="RichTextLabel" parent="."]
-offset_left = -93.0
-offset_top = -61.0
-offset_right = 133.0
-offset_bottom = -1.0
+offset_left = -13.0
+offset_top = -67.0
+offset_right = 58.0
+offset_bottom = -44.0
 rotation = -0.0872665
 bbcode_enabled = true
 text = "BRAIN"
+fit_content = true
+autowrap_mode = 0
 script = ExtResource("3_yw361")
+
+[node name="Sign" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("4_r7qyq")
