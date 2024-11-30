@@ -14,7 +14,7 @@ var halloween_words = [
 ]
 
 func random_word() -> String:
-	var ran_num = randi_range(0, halloween_words.size())
+	var ran_num = randi_range(0, halloween_words.size() - 1)
 	return halloween_words[ran_num]
 
 func _ready():

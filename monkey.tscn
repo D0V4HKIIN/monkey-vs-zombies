@@ -1,8 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://cg238rldmwhqx"]
 
-[ext_resource type="Texture2D" uid="uid://dihgxefren6xs" path="res://icon.svg" id="1_tcxmm"]
+[ext_resource type="Texture2D" uid="uid://dal5ehc65w2px" path="res://kodapa.png" id="1_txa6k"]
 
 [node name="Monkey" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_tcxmm")
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("1_txa6k")
