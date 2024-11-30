@@ -11,7 +11,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	position.x -= delta * SPEED*3
-	if position.x <= -150:
+	if position.x <= 400:
 		game_over()
 
 func _unhandled_input(event):
