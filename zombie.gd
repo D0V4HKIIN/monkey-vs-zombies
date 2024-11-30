@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var SPEED = 30
+@export var SPEED = 50
 var word = "BRAIN"
 var current = 0
 var game_over_scene = preload("res://game_over.tscn")
@@ -10,8 +10,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	position.x -= delta * SPEED*3
-	if position.x <= -150:
+	position.x -= delta * SPEED
+	if position.x <= 400:
 		game_over()
 
 func _unhandled_input(event):
