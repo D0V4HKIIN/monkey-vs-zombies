@@ -2,7 +2,7 @@ class_name SignReader extends KeyWordReader
 
 var halloween_words = [
 	"BAT", "GHOST", "WITCH", "PUMPKIN", "VAMPIRE", "WEREWOLF", "MONSTER", "ZOMBIE", "SPIDER", "CAULDRON",
-	"BLACK", "CAT", "HAUNTED", "MUMMY", "MOMMY?", "SKULL", "BONES", "TOMBSTONE", "FRANKENSTEIN", "CREEPY", "GOBLIN", "EERIE",
+	"BLACK", "CAT", "HAUNTED", "MUMMY", "MOMMY", "SKULL", "BONES", "TOMBSTONE", "FRANKENSTEIN", "CREEPY", "GOBLIN", "EERIE",
 	"NIGHTMARE", "FULL", "MOON", "GHOULISH", "GRUESOME", "BOO", "CANDY", "TRICK", "TREAT", "POTION", "SPELL",
 	"COBWEB", "JACK-O’-LANTERN", "SHADOW", "LANTERN", "SCARY", "COSTUME", "MASK", "BLOOD", "GRAVEYARD", "COFFIN",
 	"BROOMSTICK", "CLOAK", "HOCUS", "POCUS", "WRAITH", "PHANTASM", "CREEPER", "HORROR", "CHILLING", "SCREECH", "FANGS",
@@ -14,7 +14,7 @@ var halloween_words = [
 ]
 
 func random_word() -> String:
-	var ran_num = randi_range(0, halloween_words.size())
+	var ran_num = randi_range(0, halloween_words.size() - 1)
 	return halloween_words[ran_num]
 
 func _ready():

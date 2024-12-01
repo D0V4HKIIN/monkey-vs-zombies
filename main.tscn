@@ -1,17 +1,25 @@
+<<<<<<< HEAD
 [gd_scene load_steps=8 format=3 uid="uid://cwevlqf13r453"]
+=======
+[gd_scene load_steps=7 format=3 uid="uid://cwevlqf13r453"]
+>>>>>>> 3a63271b4b601e91cd9558e51c30ea8890a7c071
 
 [ext_resource type="Script" path="res://main.gd" id="1_66vdp"]
 [ext_resource type="Texture2D" uid="uid://dpxhpk6gcmsxo" path="res://banana.png" id="2_fgbhl"]
 [ext_resource type="Script" path="res://label.gd" id="2_n2ww2"]
 [ext_resource type="Script" path="res://amount_bananas.gd" id="4_30eg0"]
 [ext_resource type="Texture2D" uid="uid://qvsut1bujc02" path="res://house_with_grass.png" id="5_vdujx"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://paus.gd" id="6_io6xf"]
 [ext_resource type="PackedScene" uid="uid://b0mne176pin5t" path="res://paus.tscn" id="7_ff8ct"]
+=======
+[ext_resource type="Script" path="res://monkey_label.gd" id="6_hrpam"]
+>>>>>>> 3a63271b4b601e91cd9558e51c30ea8890a7c071
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_66vdp")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="BananaLabel" type="RichTextLabel" parent="."]
 offset_left = 10.0
 offset_top = 61.0
 offset_right = 98.0
@@ -47,6 +55,7 @@ texture = ExtResource("5_vdujx")
 
 [node name="Camera2D" type="Camera2D" parent="SubViewport"]
 
+<<<<<<< HEAD
 [node name="PausLabel" type="RichTextLabel" parent="."]
 offset_left = 1042.0
 offset_top = 17.0
@@ -60,3 +69,15 @@ script = ExtResource("6_io6xf")
 unique_name_in_owner = true
 visible = false
 script = null
+=======
+[node name="MonkeyLabel" type="RichTextLabel" parent="."]
+offset_left = 135.0
+offset_top = 108.0
+offset_right = 414.0
+offset_bottom = 138.0
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+bbcode_enabled = true
+text = "MONKEY"
+script = ExtResource("6_hrpam")
+>>>>>>> 3a63271b4b601e91cd9558e51c30ea8890a7c071
