@@ -11,5 +11,4 @@ func _process(delta: float) -> void:
 
 func game_over():
 	print("Game over")
-	var go_scene = game_over_scene.instantiate()
 	get_tree().change_scene_to_file("res://game_over.tscn")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b0mne176pin5t"]
+
+[node name="Paus" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1156.0
+offset_bottom = 645.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1160.0
+offset_bottom = 644.0
+text = "Paus"
+horizontal_alignment = 1
+vertical_alignment = 1
